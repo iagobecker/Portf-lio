@@ -23,7 +23,7 @@
         <div class="imgBx">
           <img src="/img/eu.jpg" />
         </div>
-        <h2>Iago Becker <br /><span>Desenvolvedor Frontend React</span></h2>
+        <h2>Iago Becker <br /><span>Desenvolvedor Frontend</span></h2>
       </div>
 
       <div class="contactInfo">
@@ -96,8 +96,9 @@
           responsivas e de alta performance. Especialista no ecossistema JavaScript/TypeScript, com proficiência sólida em 
           React.js, Next.js e React Native. Experiência em desenvolvimento de componentes reutilizáveis, gerenciamento de estado 
           (Redux, ContextAPI), integração com APIs REST e GraphQL, e implementação de interfaces responsivas com Tailwind CSS e 
-          Styled-components. Minha experiência em projetos de ponta a ponta, desde o design no Figma até o deploy, me permite 
+          Styled-components. Minha experiência em projetos de ponta a ponta, desde o design no Figma até o deploy, me permite
           colaborar de forma eficaz em equipes multidisciplinares e entregar soluções de alto impacto focadas na experiência do usuário.
+          Tenho também vivência em backend, com mais experiência em Python e Node.js, além de C# e APIs REST/GraphQL, o que facilita a integração com a API e a colaboração com times de back-end.
         </p>
       </div>
 
@@ -108,9 +109,12 @@
         <ul style="list-style-type: none; padding-left: 0;">
           <li>● <strong>React & Ecossistema:</strong> React.js, Next.js, React Native, TypeScript, JavaScript (ES6+)</li>
           <li>● <strong>Estilização:</strong> Tailwind CSS, Styled-components, CSS3, HTML5</li>
-          <li>● <strong>Gerenciamento de Estado:</strong> Redux.js, ContextAPI, Hooks Customizados</li>
+          <li>● <strong>Gerenciamento de Estado:</strong> Redux.js, React Query (TanStack Query v5), ContextAPI, Hooks Customizados</li>
           <li>● <strong>Formulários & Validação:</strong> Formik, Yup</li>
-          <li>● <strong>Integração:</strong> APIs REST, GraphQL, SignalR (WebSockets)</li>
+          <li>● <strong>Integração:</strong> APIs REST, GraphQL, SignalR (WebSockets), Axios</li>
+          <li>● <strong>UI & Design System:</strong> Chakra UI (@pnld/components-web), dnd-kit (drag & drop)</li>
+          <li>● <strong>Autenticação:</strong> JWT, Keycloak</li>
+          <li>● <strong>Qualidade & Testes:</strong> Jest, Testing Library, Husky, Commitlint, ESLint, Prettier</li>
           <li>● <strong>Ferramentas & DevOps:</strong> Git, GitHub, Docker, Figma, Jira</li>
         </ul>
       </div>
@@ -118,67 +122,66 @@
       <div class="about experience">
         <h2 class="title2 fs-4">Experiência Profissional</h2>
         <div>
-          <h3><strong>SPA-NEES</strong> - Sistema de Predição do Alunado</h3>
-          <p class="fs-6">Estou participando do desenvolvimento do SPA, uma solução completa com frontend em <strong>React/TypeScript</strong> que processa dados do Censo Escolar para gerar predições estratégicas de matrículas e auxiliar no planejamento educacional brasileiro.</p>
-          <p class="fs-6"><strong>Funcionalidades principais no Frontend:</strong></p>
+          <h3><strong>Desenvolvedor Frontend</strong> - NEES (Núcleo de Excelência em Tecnologias Sociais)</h3>
+          <p class="fs-6"><strong>2025 - Atual (Remoto)</strong></p>
+          <p class="fs-6">Atuo no desenvolvimento frontend de plataformas educacionais de grande escala para o setor público federal, em projetos para o <strong>MEC</strong> e o <strong>FNDE</strong>, com <strong>React, Next.js e TypeScript</strong> e o design system <strong>@pnld/components-web (Chakra UI)</strong>.</p>
+
+          <p class="fs-6"><strong>Projeto GPE — Gestão Presente na Escola (cliente: MEC):</strong> plataforma de gestão escolar em <strong>Next.js 14 (App Router)</strong> com <strong>React 18 e TypeScript</strong>, voltada ao acompanhamento de matrículas, estudantes, transferências e práticas educativas na rede pública, com arquitetura modular por domínio (controller/view + camada de serviços).</p>
           <ul>
-            <li><strong>Dashboards Interativos com React:</strong> Desenvolvimento de interfaces com mapas, gráficos e tabelas dinâmicas utilizando componentes React para análise de predições por região, etapa de ensino e dependência administrativa.</li>
-            <li><strong>Interface Responsiva:</strong> Design consistente utilizando @pnld/components-web, adaptável a diferentes dispositivos para uso de gestores públicos.</li>
-            <li><strong>Integração com API REST:</strong> Implementação de chamadas assíncronas e tratamento de dados para exibição em tempo real.</li>
-            <li><strong>Segurança e Autenticação:</strong> Integração com Keycloak (gov.br) e controle de acesso granular baseado em perfis e CPF.</li>
+            <li>Reduzi requisições redundantes à API e mantive os dados sempre atualizados ao implementar cache, sincronização e revalidação de estado de servidor com <strong>React Query (TanStack Query v5)</strong>, com refetch automático apenas após mutations.</li>
+            <li>Padronizei a integração com a API e eliminei inconsistências de contrato ao isolar DTOs do domínio com classes <strong>Mapper</strong> sobre <strong>Axios</strong> (interceptadores e conversão automática de case).</li>
+            <li>Acelerei a construção de formulários complexos e reduzi o retrabalho de validação ao centralizar criação e validação com <strong>Formik + Yup</strong> e feedback padronizado ao usuário.</li>
+            <li>Entreguei telas responsivas (base/md/lg) reutilizáveis que cobriram <strong>4 domínios</strong> da aplicação (matrículas, estudantes, transferências e práticas educativas) usando o design system <strong>@pnld/components-web (Chakra UI)</strong>.</li>
+            <li>Habilitei interações avançadas (drag and drop com <strong>@dnd-kit</strong>, impressão de documentos com react-to-print) que reduziram a reordenação de itens de <strong>~5 cliques para 1 arraste</strong>.</li>
+            <li>Garanti qualidade e consistência do código com <strong>Jest + Testing Library</strong>, <strong>ESLint + Prettier</strong> e <strong>Husky + Commitlint</strong>.</li>
+          </ul>
+
+          <p class="fs-6"><strong>Projeto SPA — Sistema de Predição do Alunado (cliente: FNDE):</strong> solução em <strong>React/TypeScript</strong> que processa dados do Censo Escolar para gerar predições estratégicas de matrículas e auxiliar no planejamento educacional brasileiro.</p>
+          <ul>
+            <li>Viabilizei a análise de predições de matrícula para gestores públicos ao construir dashboards interativos (mapas, gráficos e tabelas dinâmicas) com filtros por região, etapa de ensino e dependência administrativa.</li>
+            <li>Garanti acesso seguro e segmentado por perfil ao integrar autenticação <strong>Keycloak (gov.br)</strong> com controle granular por perfil e CPF.</li>
+            <li>Tornei a exibição de dados perceptivelmente mais rápida e fluida ao implementar chamadas assíncronas à API REST com tratamento e renderização otimizada, sem travar a interface durante o carregamento.</li>
+            <li>Mantive interface responsiva e consistente com <strong>@pnld/components-web</strong>, adaptável a diferentes dispositivos para uso de gestores públicos.</li>
           </ul>
         </div>
         <br>
         <div>
           <h3><strong>Desenvolvedor FullStack</strong> - Cervantes Tecnologia, Torres RS</h3>
-          <p class="fs-6"><strong>Fevereiro de 2025 - Maio de 2025 (Presencial)</strong></p>
-          <p class="fs-6">Fui responsável pela criação completa de uma nova aplicação, gerenciando o projeto desde sua
-            concepção inicial até a entrega do MVP. O processo começou com o design de toda a interface de usuário (UI) e
-            experiência do usuário (UX) no Figma. Em seguida, desenvolvi o <strong>front-end utilizando Next.js e TailwindCSS</strong> para garantir uma
-            interface moderna, rápida e responsiva. Implementei componentes React reutilizáveis e otimizados, realizei a integração completa com uma API REST em C# e implementei a
-            conexão com o SignalR para viabilizar a comunicação e o recebimento de eventos em tempo real, resultando em uma
-            aplicação altamente interativa e dinâmica.
-          </p>
+          <p class="fs-6"><strong>2025 (Presencial) · Contrato (PJ) — entrega de MVP</strong></p>
+          <ul>
+            <li>Entreguei o MVP de uma nova aplicação do zero em <strong>~3 meses</strong>, conduzindo desde o design UI/UX no Figma até o deploy, com front-end em <strong>Next.js + TailwindCSS</strong> e componentes React reutilizáveis.</li>
+            <li>Habilitei comunicação em tempo real com atualizações em <strong>menos de 1 segundo</strong> (eliminando polling) ao integrar <strong>SignalR (WebSockets)</strong> com a API REST em C#.</li>
+          </ul>
         </div>
         <br>
         <div>
           <h3><strong>Desenvolvedor FullStack</strong> - Hello Sistemas, Araranguá SC</h3>
-          <p class="fs-6"><strong>Julho de 2024 - Jan de 2025 (Híbrido)</strong></p>
-          <p class="fs-6">
+          <p class="fs-6"><strong>2024 - 2025 (Híbrido)</strong></p>
           <ul>
-            <li> Desenvolvi e mantive aplicações web escaláveis com <strong>React e Next.js</strong>, focando na performance e na experiência do usuário.</li>
-            <li> Criei interfaces responsivas e otimizadas com <strong>Next.js e TailwindCSS</strong>, implementando componentes React de alta qualidade.</li>
-            <li> Trabalhei com integração de <strong>APIs GraphQL e REST</strong> utilizando React Query e Axios para gerenciamento eficiente de dados.</li>
-            <li> Colaborei ativamente com equipes multidisciplinares para garantir a entrega de soluções frontend de ponta a
-              ponta, participando desde a concepção até a resolução de desafios técnicos relacionados à interface e experiência do usuário.</li>
+            <li>Melhorei a performance e a UX de aplicações web com carregamento perceptivelmente mais rápido ao desenvolver interfaces com <strong>Next.js + TailwindCSS</strong> e componentes React reutilizáveis.</li>
+            <li>Otimizei o consumo de dados e reduzi chamadas redundantes à API ao integrar <strong>APIs GraphQL e REST</strong> com cache do React Query e Axios.</li>
+            <li>Colaborei com equipes multidisciplinares na entrega de soluções frontend de ponta a ponta, da concepção à resolução de desafios técnicos de interface e UX.</li>
           </ul>
-          </p>
         </div>
         <br>
         <div>
           <h3><strong>Desenvolvedor FullStack</strong> - Cardial I.T, Curitiba PR</h3>
-          <p class="fs-6"><strong>Abr de 2023 - 01/07/2024 (Remoto)</strong></p>
-          <p class="fs-6">
+          <p class="fs-6"><strong>2023 - 2024 (Remoto)</strong></p>
           <ul>
-            <li> Liderei o desenvolvimento do <strong>front-end com React Native</strong> para dois aplicativos mobile, criando interfaces intuitivas e performáticas.</li>
-            <li> No projeto Ruminar, desenvolvi funcionalidades frontend para o monitoramento da nutrição de gado leiteiro, resultando
-              em uma interface intuitiva para produtores utilizando <strong>React Native</strong>.</li>
-            <li> Desenvolvi o app Indiki com <strong>React Native</strong>, criando uma interface moderna para automatizar o envio de mensagens via WhatsApp e simplificar programas de
-              indicação de clientes.</li>
+            <li>Liderei o front-end de <strong>2 apps mobile em React Native</strong>, entregando interfaces intuitivas e performáticas do início ao deploy nas lojas.</li>
+            <li>No projeto Ruminar, desenvolvi funcionalidades de monitoramento da nutrição de gado leiteiro, entregando uma interface intuitiva para produtores com <strong>React Native</strong>.</li>
+            <li>Automatizei o envio de mensagens via WhatsApp e o programa de indicação no app Indiki, eliminando o disparo manual de mensagens e agilizando significativamente essa rotina.</li>
           </ul>
-          </p>
         </div>
         <br>
         <div>
           <h3><strong>Desenvolvedor FullStack</strong> - Ubistart, São Paulo SP</h3>
-          <p class="fs-6"><strong>Nov de 2023 - Maio de 2024 (Remoto)</strong></p>
-          <p class="fs-6">Trabalhei no projeto Ubilabs, uma aplicação desenvolvida para o departamento de Recursos
-            Humanos. Desenvolvi o frontend utilizando <strong>React.js</strong> com foco em componentes reutilizáveis e interfaces intuitivas. 
-            Implementei formulários complexos com <strong>Formik e Yup</strong> para validação, utilizei <strong>ContextAPI e Redux.js</strong> para gerenciamento de estado, 
-            e criei interfaces modernas com <strong>Styled-components</strong> e <strong>Stardust-ui/react</strong>. A aplicação permite automatizar tarefas repetitivas, 
-            como cálculos de horas trabalhadas por mês, horas extras, geração de ordens de serviço e contratos de trabalho, 
-            além de fornecer uma visão clara da disponibilidade dos funcionários para o RH através de dashboards interativos.
-          </p>
+          <p class="fs-6"><strong>2023 - 2024 (Remoto) · Projeto (PJ)</strong></p>
+          <ul>
+            <li>Automatizei o cálculo de horas trabalhadas, horas extras, ordens de serviço e contratos para o RH, eliminando tarefas manuais repetitivas, com front-end em <strong>React.js</strong>, <strong>Formik/Yup</strong>, <strong>Context API</strong> e <strong>Redux.js</strong>.</li>
+
+            <li>Construí interfaces modernas e dashboards interativos com <strong>Styled-components</strong> e <strong>Stardust-ui/react</strong>, dando ao RH visão clara da disponibilidade dos funcionários.</li>
+          </ul>
         </div>
 
       </div>
